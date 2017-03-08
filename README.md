@@ -43,8 +43,6 @@ lex2vec = w2v.Word2Vec.load(os.path.join("save", model_name))
 lex2vec.most_similar("EMBRATEL")
 ```
 
----
-
 ```
 Resultado:
 
@@ -64,7 +62,6 @@ Resultado:
 lex2vec.most_similar("Vargas")
 ```
 
----
 ```
 Resultado:
 
@@ -96,8 +93,6 @@ nearest_similarity_cosmul("Lula", "Presidencia", "Senado")
 nearest_similarity_cosmul("Aracaju", "Sergipe", "Ceara")
 ```
 
----
-
 ```
 Resultado:
 
@@ -112,7 +107,6 @@ Aracaju is related to Sergipe, as Fortaleza is related to Ceara
 lex2vec.doesnt_match("educacao saude constituicao seguranca".split())
 ```
 
----
 ```
 Resultado:
 
@@ -129,7 +123,6 @@ all_word_vectors_matrix_2d = pickle.load(open("save/tsne.p", "rb"))
 print(all_word_vectors_matrix_2d)
 ```
 
----
 ```
 Resultado:
 
